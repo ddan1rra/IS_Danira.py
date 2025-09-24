@@ -1,0 +1,16 @@
+ef reverse_list(lst):
+    return lst[::-1]
+
+def sort_by_abs_desc(lst):
+    return sorted(lst, key=lambda x: abs(x), reverse=True)
+
+def swap_first_last(lst):
+    if len(lst) >= 2:
+        lst[0], lst[-1] = lst[-1], lst[0]
+    return lst
+
+numbers = [3, -7, 0, 12, -4]
+print("Original:", numbers)
+print("Reversed:", reverse_list(numbers))
+print("Sorted by abs desc:", sort_by_abs_desc(numbers))
+print("Swapped first/last:", swap_first_last(numbers[:]))
