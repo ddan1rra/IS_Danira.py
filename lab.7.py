@@ -1,0 +1,6 @@
+t = (5, 2, 9, 2, 7)
+print("Tuple:", t)
+print("Sum =", sum(t))
+print("Min =", min(t))
+print("Max =", max(t))
+print("Count of 2 =", t.count(2))
